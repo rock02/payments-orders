@@ -6,8 +6,7 @@ import java.util.Properties;
 
 public class Property {
 	
-	public static String ORDERS_API;
-	public static String SHIPMENTS_API;
+	public static String URL_API;
 	public static int REQ_SIZE;
 
 	private static final String PROP_FILE_CONFIG = "src/test/resources/%s/config.properties";
@@ -29,8 +28,7 @@ public class Property {
 
 			Properties properties = getProp(base);
 
-			ORDERS_API = properties.getProperty("orders.api");
-			SHIPMENTS_API = properties.getProperty("shipments.api");
+			URL_API = properties.getProperty("url.api");
 			REQ_SIZE = Integer.parseInt(properties.getProperty("req.size"));
 
 		} catch (IOException e) {
