@@ -1,1 +1,9 @@
 /target/
+.DS_Store
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.classpath
+.factorypath
+.project
+.settings
